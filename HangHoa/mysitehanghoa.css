@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eef7f8;
+    color: #1c2d3a;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#nav{
+    margin-top: 10px;
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+#nav a:hover{
+    text-decoration: underline;
+}
+#products{
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+#products h2{
+    text-align: center;
+    color: #163a5f;
+    margin-bottom: 20px;
+}
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+#sp1, #sp2, #sp3{
+    background-color: white;
+    border: 1px solid #cce3e6;
+    border-radius: 8px;
+    padding: 15px;
+    width: 270px;
+    text-align: center;
+}
+#grid img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+#grid h3{
+    margin: 12px 0 6px;
+    font-size: 17px;
+    color: #163a5f;
+}
+#grid p{
+    font-size: 14px;
+    color: #4b6073;
+    margin-bottom: 10px;
+}
+#grid span{
+    display: block;
+    font-weight: bold;
+    color: #0d9488;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+#grid button{
+    background-color: #0d9488;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#grid button:hover{
+    background-color: #163a5f;
+}
+#footer{
+    background-color: #163a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

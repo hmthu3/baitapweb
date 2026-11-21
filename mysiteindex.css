@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff8e7 0%, #fde8e4 100%);
+    color: #2e1d1b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+#home-wrapper{
+    max-width: 1000px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(179, 38, 30, 0.14);
+}
+#home-header{
+    background: linear-gradient(120deg, #b91c1c 0%, #d97706 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+#student-badge{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.22);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+#home-header h1{
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+#home-header p{
+    font-size: 15px;
+    color: #fef3c7;
+}
+#projects-container{
+    padding: 40px 30px;
+}
+#projects-container h2{
+    text-align: center;
+    font-size: 20px;
+    color: #991b1b;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+#cards-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+#card-aquarium,
+#card-cv,
+#card-shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fffdf7;
+    border: 1.5px solid #fcd34d;
+    border-radius: 14px;
+    padding: 28px 22px;
+    color: #2e1d1b;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+#card-aquarium:hover,
+#card-cv:hover,
+#card-shop:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(185, 28, 28, 0.16);
+    border-color: #dc2626;
+}
+#cards-grid h3{
+    font-size: 18px;
+    color: #991b1b;
+    margin-bottom: 10px;
+}
+#cards-grid p{
+    font-size: 13.5px;
+    color: #5c4038;
+    line-height: 1.55;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.btn-view{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #b91c1c 0%, #d97706 100%);
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: opacity 0.2s;
+}
+#card-aquarium:hover .btn-view,
+#card-cv:hover .btn-view,
+#card-shop:hover .btn-view{
+    opacity: 0.9;
+}
+#home-footer{
+    background-color: #fef3c7;
+    text-align: center;
+    padding: 16px;
+    font-size: 13.5px;
+    color: #991b1b;
+    border-top: 1px solid #fde68a;
+}

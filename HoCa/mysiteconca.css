@@ -1,0 +1,222 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: radial-gradient(circle at center, #fdfbfb 0%, #85cef2 100%);
+   overflow: hidden;
+   position: relative;
+}
+#tieu-de{
+    margin-bottom: 20px;
+    text-align: center;
+    z-index: 10;
+}
+#tieu-de h1{
+    font-size: 28px;
+    color: #e7eb1f;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+#tieu-de p{
+    font-size: 14px;
+    color: #546e7a;
+    margin-top: 4px;
+}
+#khu-vuc-trung-bay{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+#ho-ca{
+     position: relative;
+     width: 850px;
+     height: 460px;
+     background: linear-gradient(to bottom, #4dd0e1 0%, #41c5d1 60%, #2ab8a1 100%);
+     border: 12px solid #263238;
+     border-bottom: 16px solid #263238;
+     border-radius: 20px 20px 6px 6px;
+     overflow: hidden;
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), inset 0 0 40px rgba(0, 0, 0, 0.2);
+     z-index: 3;
+}
+#ho-ca::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 40%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.08);
+    transform: rotate(25deg);
+    pointer-events: none;
+    z-index: 10;
+}
+#day-ho{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to bottom, #ffe082, #ffb300);
+    border-top: 3px solid #ffd54f;
+    z-index: 2;
+}
+#da-1,
+#da-2,
+#da-3 {
+    position: absolute;
+    bottom: 35px;
+    background: #546e7a;
+    border-radius: 50% 50% 20% 20%;
+    z-index: 3;
+}
+#da-1 {left:80px; width:90px; height:45px; background: #455a64; }
+#da-2 {left:140px; width:60px; height:30px; background: #607d8b; }
+#da-3 {right:120px; width:110px; height:50px; background: #37474f; }
+
+#bb-1,
+#bb-2,
+#bb-3 {
+    position: absolute;
+    bottom: 45px;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    z-index: 4;
+    animation-name: bong-bong;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+#bb-1 {left:100px; animation-delay: 0s; }
+#bb-2 {left:430px; animation-delay: 1.8s; animation-duration: 6s; width: 8px; height: 8px; }
+#bb-3 {right:130px; animation-delay: 3s; animation-duration: 5.5s; width: 15px; height: 15px; }
+@keyframes bong-bong{
+    0% {bottom:45px; opacity: 1; transform: translateX(0); }
+    100% {bottom:100%; opacity: 0; transform: translateX(15px); }
+}
+#shark{
+  left: 30px;
+  top: 70px;
+  position: absolute;
+  z-index: 6;
+  animation-name: Shark;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+#shark img{
+  width: 150px;
+  height: auto;
+  display: block;
+}
+@keyframes Shark{
+  0%  {left:30px;  top:70px; transform: scaleX(1);}
+  45% {left:650px; top:110px; transform: scaleX(1);}
+  50% {left:670px; top:110px; transform: scaleX(-1);}
+  95% {left:30px;  top:80px; transform: scaleX(-1);}
+  100%{left:30px;  top:70px; transform: scaleX(1);}
+}
+#turtle{
+  position: absolute;
+  left: 40px;
+  top: 290px;
+  z-index: 5;
+  animation-name: Turtle;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+#turtle img{
+  width: 105px;
+  height: auto;
+  display: block;
+}
+@keyframes Turtle{
+  0% {left:40px; top:290px; transform: scaleX(1);}
+  45% {left:700px; top:270px; transform: scaleX(1);}
+  50% {left:710px; top:270px; transform: scaleX(-1);}
+  95% {left:40px; top:300px; transform: scaleX(-1);}
+  100% {left:40px; top:290px; transform: scaleX(1);}
+}
+#diver1{
+  position: absolute;
+  left: 520px;
+  top: 60px;
+  z-index: 7;
+  animation-name: Diver1;
+  animation-duration: 13s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running; 
+}
+#diver1 img{
+  width: 95px;
+  height: auto;
+  display: block;
+}
+@keyframes Diver1{
+  0% {left:520px; top:60px; transform: scaleX(1);}
+  25% {left:620px; top:220px; transform: scaleX(1);}
+  48% {left:710px; top:90px; transform: scaleX(1);}
+  50% {left:715px; top:90px; transform: scaleX(-1);}
+  75% {left:580px; top:230px; transform: scaleX(-1);}
+  100% {left:520px; top:60px; transform: scaleX(1);}
+}
+#diver2{
+  position: absolute;
+  left: 140px;
+  top: 210px;
+  z-index: 7;
+  animation-name: Diver2;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+#diver2 img{
+  width: 90px;
+  height: auto;
+  display: block;
+}
+@keyframes Diver2{
+  0% {left:140px; top:210px; transform: scaleX(1);}
+  50% {left:340px; top:310px; transform: scaleX(1);}
+  51% {transform: scaleX(-1);}
+  100% {left:140px; top: 210px; transform: scaleX(-1);}
+}
+#diver3{
+  position: absolute;
+  left: 360px;
+  top: 220px;
+  z-index: 7;
+  animation-name: Diver3;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+#diver3 img{
+  width: 90px;
+  height: auto;
+  display: block;
+}
+@keyframes Diver3{
+  0% {left:360px; top:220px; transform: scaleX(1);}
+  50% {left:540px; top:320px; transform: scaleX(1);}
+  51% {transform: scaleX(-1);}
+  100% {left:360px; top:220px; transform: scaleX(-1);}
+}

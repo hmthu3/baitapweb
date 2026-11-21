@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f6eefc 0%, #fdeef4 100%);
+    color: #2f2936;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+#cv{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(106, 48, 147, 0.14);
+}
+#bentrai{
+    width: 36%;
+    background-color: #f4ecf9;
+    padding: 32px 24px;
+    border-right: 1px solid #e6d5f2;
+}
+#hinhcanhan{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+#hinhcanhan img{
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 6px 18px rgba(132, 66, 170, 0.25);
+    background-color: #fff;
+}
+#block-contact,
+#block-education,
+#block-skills,
+#block-hobbies {
+    margin-bottom: 26px;
+}
+#block-contact h3,
+#block-education h3,
+#block-skills h3,
+#block-hobbies h3{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #7b3fa0 0%, #c86dd7 100%);
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+#info-list{
+    list-style: none;
+}
+#info-list li{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    margin-bottom: 11px;
+    color: #3a2e47;
+    word-break: break-word;
+}
+#info-list i{
+    color: #9b4dca;
+    margin-top: 3px;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+#info-list a{
+    color: #6a2c91;
+    text-decoration: none;
+    font-weight: 500;
+}
+#info-list a:hover{
+    text-decoration: underline;
+    color: #c94b86;
+}
+#edu-box{
+    font-size: 13.5px;
+    color: #3a2e47;
+}
+#edu-school{
+    font-weight: 700;
+    color: #5b257d;
+    margin-bottom: 2px;
+}
+#edu-major{
+    font-weight: 600;
+    color: #b84a7c;
+    margin-bottom: 6px;
+}
+#edu-detail{
+    font-size: 13px;
+    color: #52475e;
+}
+#skill-list,
+#hobby-list{
+    padding-left: 18px;
+    font-size: 13.5px;
+    color: #3a2e47;
+}
+#skill-list li,
+#hobby-list li{
+    margin-bottom: 8px;
+}
+#skill-list li::marker,
+#hobby-list li::marker{
+    color: #b84a7c;
+    font-weight: bold;
+}
+#main-content{
+    width: 64%;
+    padding: 36px 34px;
+    background-color: #ffffff;
+}
+#profile-header{
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #f2e4f8;
+}
+#profile-header h1{
+    font-size: 32px;
+    font-weight: 800;
+    color: #4a1e66;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+#role{
+    font-size: 16px;
+    font-weight: 600;
+    color: #c45287;
+}
+#section-about,
+#section-experience {
+    margin-bottom: 30px;
+}
+
+/* Thanh tiêu đề mục lớn */
+#banner-about,
+#banner-experience {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #8e44ad 0%, #d46a9e 100%);
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+#banner-about i,
+#banner-experience i {
+    font-size: 15px;
+}
+
+#banner-about h2,
+#banner-experience h2 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+#section-about p {
+    font-size: 14px;
+    color: #3d3547;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Timeline kinh nghiệm có chấm tròn & đường nối */
+#timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #e4c6f2;
+    margin-left: 6px;
+}
+
+#exp-1,
+#exp-2,
+#exp-3 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#exp-3 {
+    margin-bottom: 0;
+}
+
+#exp-1::before,
+#exp-2::before,
+#exp-3::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c45287;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #c45287;
+}
+
+#exp-1 > div,
+#exp-2 > div,
+#exp-3 > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#exp-1 h4,
+#exp-2 h4,
+#exp-3 h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3a1852;
+}
+
+#exp-1 span,
+#exp-2 span,
+#exp-3 span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8e44ad;
+    background-color: #f6ebfc;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#exp-1 p,
+#exp-2 p,
+#exp-3 p {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #b84a7c;
+    margin: 3px 0 6px;
+}
+
+#exp-1 ul,
+#exp-2 ul,
+#exp-3 ul {
+    padding-left: 18px;
+    font-size: 13.5px;
+    color: #463e52;
+}
+
+#exp-1 li,
+#exp-2 li,
+#exp-3 li {
+    margin-bottom: 5px;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    #cv-wrapper {
+        flex-direction: column;
+    }
+
+    #sidebar,
+    #main-content {
+        width: 100%;
+    }
+
+    #sidebar {
+        border-right: none;
+        border-bottom: 1px solid #e6d5f2;
+    }
+
+    #main-content {
+        padding: 26px 20px;
+    }
+
+    #profile-header h1 {
+        font-size: 26px;
+    }
+}
